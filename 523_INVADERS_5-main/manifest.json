@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Raj Kavach",
+    "version": "1.0",
+    "description": "A chrome extension to detecting and mitigating online fraud.",
+    "permissions": [
+      "activeTab",
+      "storage",
+      "webNavigation"
+    ],
+    "action": {
+      "default_icon": "icon2.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon2.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content2.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  

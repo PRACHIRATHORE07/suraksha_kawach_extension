@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suraksha Kavach</title>
+  <style>
+    body .gif-container {
+      width: 500px;
+      height: 300px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      align-items:center;
+      
+  }
+
+  img {
+      width: 500px;
+      height: auto;
+      display: block;
+      border:none;
+  }
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('bg.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 200px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+  }
+   
+
+    h1 {
+      color: #fff; /* Set text color to white */
+    }
+
+    .user-icon-btn {
+      border: 1px solid #fff; /* Corrected border property */
+      background-color: transparent; /* Set background color to transparent */
+      padding: 10px 15px;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+      color: #fff; /* Set text color to white */
+    }
+    .checkbox-container {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 18px; /* Increase font size */
+    }
+
+    .checkbox-input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkbox-custom {
+      position: relative;
+      width: 43px; /* Increase width */
+      height: 15px; /* Increase height */
+      background: linear-gradient(to right, #cf5050, #7f0a0a);
+      border-radius: 9px; /* Adjust border-radius */
+      margin-right: 253px;
+      margin-left: 253px;
+      margin-top: 23px;
+      transition: background 0.3s;
+    }
+
+    .checkbox-custom:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      top: 2.5px;
+      left: 5px;    
+      transition: transform 0.3s;
+    }
+
+    .checkbox-input:checked + .checkbox-custom {
+      background: linear-gradient(to right, #3abd5b, #0b5b1d);
+    }
+
+    .checkbox-input:checked + .checkbox-custom:before {
+      transform: translateX(18px); /* Adjust translation */
+    }
+    
+  </style>
+
+</head>
+<body>
+  <label class="checkbox-container">
+    <input type="checkbox" class="checkbox-input">
+    <span class="checkbox-custom"></span>
+</label>
+</body>
+</html>
+

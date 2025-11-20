@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Suraksha Kavach",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "48": "lock.png"
+    },
+    "default_popup": "popup.html"
+  },
+    "background": {
+      "service_worker": "background.js"
+    
+  },
+    "icons": {
+      "48": "lock.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ]
+}
